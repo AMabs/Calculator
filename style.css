@@ -1,0 +1,99 @@
+body{
+    text-align: center;
+}
+
+.calculatorContainer {
+    width: 40vh;
+    height: 60vh;
+    margin: auto;
+    background-color: gray;
+    border-radius: 0.5px;
+    /* padding: 10px; */
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    box-sizing: border-box;
+}
+
+.screen {
+    border: 5px solid purple;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#prevNumber {
+    background-color: lightgray;
+    /* width: 350px;
+    height: 20px; */
+    border: 1px solid blue;
+    text-align: right;
+    display: inherit;
+    flex-grow: 1;
+}
+
+#display {
+    background-color: lightgray;
+    /* width: 350px;
+    height: 20px; */
+    border: 1px solid red;
+    display: inherit;
+    flex-grow: 1;
+}
+
+.buttonsGrid {
+    border: 5px solid orange;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.numbers {
+    border: 5px solid green;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.operations {
+    border: 5px solid pink;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.mods {
+    border: 5px solid yellow;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.operatorBtn {
+    background-color: rgb(180, 180, 180);
+}
+.operatorBtn:hover {
+    background-color: rgb(122, 122, 122);
+}
+
+#clearBtn {
+    background-color: rgb(235, 21, 64);
+    /* box-sizing: border-box; */
+}
+#clearBtn:hover {
+    background-color: crimson;
+}
+
+#deleteBtn {
+    background-color: rgb(235, 21, 64);;
+    /* box-sizing: border-box; */
+}
+#deleteBtn:hover {
+    background-color: crimson;
+}
+
+#equalsBtn {
+    background-color: rgb(1, 146, 1);
+}
+#equalsBtn:hover {
+    background-color: green;
+}
