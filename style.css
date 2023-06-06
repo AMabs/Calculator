@@ -64,8 +64,10 @@ body{
 
 .mods {
     border: 5px solid yellow;
+    display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .operatorBtn {
@@ -77,15 +79,22 @@ body{
 
 #clearBtn {
     background-color: rgb(235, 21, 64);
-    /* box-sizing: border-box; */
+    display: grid;
+    text-align: center;
+    line-height: 7.5vh;
+    border: 1px solid black;
+    border-right: 0;
 }
 #clearBtn:hover {
     background-color: crimson;
 }
 
 #deleteBtn {
-    background-color: rgb(235, 21, 64);;
-    /* box-sizing: border-box; */
+    background-color: rgb(235, 21, 64);
+    display: grid;
+    text-align: center;
+    line-height: 7.5vh;
+    border: 1px solid black;
 }
 #deleteBtn:hover {
     background-color: crimson;
